@@ -14,7 +14,7 @@ struct patient_descr
 	char doc_name[15];
 } patient;
 
-int final_cost;
+int *final_cost;
 int option;
 
 void input()
@@ -61,7 +61,7 @@ int calculations()
 	{
 		return 0;
 	};
-	final_cost = cost;
+	final_cost = &cost;
 }
 
 
@@ -73,7 +73,7 @@ int _tmain()
 	printf(patient.name);
 	printf("\n%s", patient.symptoms);
 	printf("\nDoctor %s", patient.doc_name);
-	printf("\n%d$", final_cost);
+	printf("\n%d$", *final_cost);
 	_getch();
 	return 0;
 }
