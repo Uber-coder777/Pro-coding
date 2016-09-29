@@ -5,7 +5,6 @@
 #include <conio.h>
 #include <string.h>
 #include <stdlib.h>
-//#include <cstring>
 
 struct patient_descr
 {
@@ -33,25 +32,25 @@ void input()
 int calculations()
 {
 	int cost;
-	if (option == 1)
+	if (option == '1')
 	{
 		strcpy(patient.symptoms, "Cough and temperature");
 		strcpy(patient.doc_name, "Ridus");
 		cost = 250;
 	}
-	else if (option == 2)
+	else if (option == '2')
 	{
 		strcpy(patient.symptoms, "Rhinitis and sore throat");
 		strcpy(patient.doc_name, "Ridus");
 		cost = 200;
 	}
-	else if (option == 3)
+	else if (option == '3')
 	{
 		strcpy(patient.symptoms, "Headache and vomit");
 		strcpy(patient.doc_name, "Petterson");
 		cost = 400;
 	}
-	else if (option == 4)
+	else if (option == '4')
 	{
 		strcpy(patient.symptoms, "Physical injury");
 		strcpy(patient.doc_name, "Smith");
